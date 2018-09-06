@@ -1,0 +1,81 @@
+var venues = {
+  "coliseum": {
+    "name": "Veterans Memorial Coliseum",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "mainstage": {
+    "name": "Main Stage",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "theater": {
+    "name": "Theater",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "pavilion": {
+    "name": "Pavilion",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "arcade": {
+    "name": "Arcade",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "tabletop": {
+    "name": "Tabletop",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "multiple": {
+    "name": "Multiple Venues",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+  },
+  "mozilla": {
+    "name": "Mozilla Portland",
+    "location": {
+      "latitude": "45.5234502",
+      "longitude": "-122.684866"
+    },
+    "link": "https://goo.gl/maps/XiJ9bqM2kUR2"
+  },
+  "northwarehouse": {
+    "name": "North Warehouse",
+    "location": {
+      "latitude": "45.5378846",
+      "longitude": "-122.6762388"
+    },
+    "link": "https://goo.gl/maps/nt6z57QQvov"
+  },
+  "halfling": {
+    "name": "Halfling Studios at SinBin",
+    "location": {
+      "latitude": "45.533099",
+      "longitude": "-122.700066"
+    },
+    "link": "https://goo.gl/maps/NVBinxEkqR82"
+  }
+}

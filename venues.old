@@ -1,0 +1,57 @@
+var venues = {
+  "coliseum": {
+    "name": "Veterans Memorial Coliseum",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "mainstage": {
+    "name": "Main Stage",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "theatre": {
+    "name": "Theatre",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "pavilion": {
+    "name": "Pavilion",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "arcade": {
+    "name": "Arcade",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "tabletop": {
+    "name": "Tabletop",
+    "location": {
+      "latitude": "45.532141",
+      "longitude": "-122.6693299"
+    },
+    "link": "https://goo.gl/maps/sPJe9UY5Nqs"
+  },
+  "multiple": {
+    "location": {
+      "latitude": "45.5167119",
+      "longitude": "-122.6555922"
+    },
+    "name": "Multiple Venues"
+  }
+}

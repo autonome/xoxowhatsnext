@@ -1,0 +1,1000 @@
+var rawEvents = [
+  {
+    "name": "Social",
+    "slug": "social",
+    "venue": "multiple",
+    "days": {
+      "2018-09-07": {
+        "description": "A tradition started in our first year, XOXO Social is a day of meetups, parties, and special events around town — a chance to make new friends while exploring Portland.",
+        "start": "8am",
+        "end": "7pm"
+      }
+    },
+    "lineup": [
+      {
+        "start": "8am",
+        "end": "6pm",
+        "name": "XOXO Slack Meetups",
+        "description": "The physical manifestation of the XOXO Slack, with dozens of channels self-organizing together in real-life. No registration required — join anything that sounds interesting! [View as a grid](https://social2018.glitch.me/), courtesy of Annika Backstrom.",
+        "subevents": [
+          {
+            "start": "4pm",
+            "end": "6pm",
+            "name": "#beer",
+            "location": "Modern Times Belmont Fermentorium",
+            "location_url": "https://goo.gl/maps/v5BWsa2b3Gr",
+            "description": "Join us for a flight at the Portland outpost of San Diego's [Modern Times](http://www.moderntimesbeer.com/tasting-room/portland), an employee-owned brewery with an excellent vegan menu. (Then maybe sneak across the street for Hong Kong-style bubble waffles at [Puffle Waffle's](https://www.pufflewaffles.com/) grand opening.)"
+          },
+          {
+            "start": "9am",
+            "name": "#biking",
+            "location": "XOXO Registration Area",
+            "location_url": "https://goo.gl/idwx2Z",
+            "description": "Meet by the XOXO registration area for a stunning [15-mile ride](https://www.strava.com/routes/15304915) across six of Portland's iconic bridges."
+          },
+          {
+            "start": "11am",
+            "name": "#books",
+            "location": "Powell's, Leaving from Quality Bar",
+            "location_url": "https://goo.gl/maps/AHFGZqgRBn12"
+          },
+          {
+            "start": "3pm",
+            "end": "5pm",
+            "name": "#bots",
+            "location": "Capitol",
+            "location_url": "https://goo.gl/maps/pti8aT37efN2"
+          },
+          {
+            "start": "4pm",
+            "end": "6pm",
+            "name": "#civic-tech",
+            "location": "Dig A Pony",
+            "location_url": "https://goo.gl/maps/BeFDDDWRGWD2"
+          },
+          {
+            "start": "8am",
+            "name": "#climbing",
+            "location": "Planet Granite",
+            "location_url": "https://goo.gl/maps/9DWxdGtEK642"
+          },
+          {
+            "start": "4pm",
+            "end": "6pm",
+            "name": "#cocktails",
+            "location": "Paydirt",
+            "location_url": "https://goo.gl/maps/6gTKbB7XhtR2"
+          },
+          {
+            "start": "10am",
+            "end": "12pm",
+            "name": "#comics",
+            "location": "Books with Pictures",
+            "location_url": "https://goo.gl/maps/joSceQmBWyS2"
+          },
+          {
+            "start": "4pm",
+            "end": "6pm",
+            "name": "#disney",
+            "location": "Hale Pele",
+            "location_url": "https://goo.gl/maps/EsBSPuEpsJM2"
+          },
+          {
+            "start": "11am",
+            "end": "12pm",
+            "name": "#education",
+            "location": "Grendel's Coffee House",
+            "location_url": "https://goo.gl/maps/8pCTa3ceGo42"
+          },          
+          {
+            "start": "9am",
+            "name": "#fitness",
+            "location": "Leaving from Essential Forces Fountain",
+            "location_url": "https://goo.gl/maps/gqi4zdbqqP42",
+            "description": "All paces are welcome for this morning run, with [3.75 mile](https://www.strava.com/routes/14409431) and [5.5 mile](https://www.strava.com/routes/14409453) routes available, meeting at the fountain at 8:55am, where runs start and finish."
+          },
+          {
+            "start": "3pm",
+            "end": "5pm",
+            "name": "#game-making",
+            "location": "Ovation Coffee & Tea",
+            "location_url": "https://goo.gl/maps/94px3wR6QEy"
+          },
+          {
+            "start": "9am",
+            "name": "#hiking",
+            "location": "Leaving from XOXO Registration",
+            "location_url": "https://goo.gl/maps/gqi4zdbqqP42",
+            "description": "The [4T](https://4ttrail.wordpress.com/take-a-hike/) is a great way to experience Portland with four miles of trails, plus travel by tram, trolley, and train."
+          },
+          {
+            "start": "1pm",
+            "end": "2pm",
+            "name": "#immersive",
+            "location": "Taylor Works Building (Lower Level)",
+            "location_url": "https://goo.gl/maps/2UWLwg1FPoB2",
+            "description": "Timberview Productions and Laura E. Hall invite you to [visit](https://www.paperlesspost.com/flyer/go/n7WaWpnu1e6oXbSXlBVp) the future home of the Meridian Adventure Co."
+          },
+          {
+            "start": "10am",
+            "end": "12pm",
+            "name": "#indieweb / #xoxo-mastodon",
+            "location": "Cup & Bar",
+            "location_url": "https://goo.gl/maps/vb1wGEYtHWB2",
+            "description": "Take back control of your content from the corporations trying to own it. Beginners welcome!"
+          },
+          {
+            "start": "3pm",
+            "end": "5pm",
+            "name": "#kickstarter",
+            "location": "Century",
+            "location_url": "https://goo.gl/maps/Q6VhFJ1oSX22",
+            "description": "Meet other creators and members of the Kickstarter team for a drink on Century's rooftop bar."
+          },
+          {
+            "start": "1pm",
+            "end": "5pm",
+            "name": "#knit-and-purl / #sewing",
+            "location": "Radio Room",
+            "location_url": "https://goo.gl/maps/GDNg28F5s1u",
+            "description": "A joint meetup between our knitting and sewing channels, complete with a [PDX fiber map](http://goo.gl/AzZ8bH)."
+          },
+          {
+            "start": "2pm",
+            "end": "5pm",
+            "name": "#language",
+            "location": "Produce Row Cafe",
+            "location_url": "https://goo.gl/maps/sTZjSu3yQzD2",
+            "description": "Internet linguist [Gretchen McCulloch](https://gretchenmcculloch.com/) leads this gathering of language enthusiasts, over rounds of [Rewordable](http://rewordable.com/)."
+          },
+          {
+            "start": "4:30pm",
+            "end": "6pm",
+            "name": "#mcelroys",
+            "location": "Taco Bell",
+            "location_url": "https://goo.gl/maps/1khxFcnUyGS2",
+            "description": "I WANNA MUNCH!"
+          },
+          {
+            "start": "12pm",
+            "end": "3pm",
+            "name": "#music-making",
+            "location": "AudioCinema",
+            "location_url": "https://goo.gl/maps/tn7giuzeWmG2",
+            "description": "We've booked this rehearsal space for three hours and are bringing out a bunch of instruments. Let's see what happens."
+          },
+          {
+            "start": "11am",
+            "end": "1pm",
+            "name": "#parenting",
+            "location": "Made You Look",
+            "location_url": "https://goo.gl/maps/eECNKnzFcPs",
+            "description": "This charming toy store is hosting XOXO parents with little ones between 6 months to 8 years old. Juice boxes and PB&Js provided."
+          },
+          {
+            "start": "1pm",
+            "end": "3pm",
+            "name": "#patreon",
+            "location": "See See Motorcycle",
+            "location_url": "https://goo.gl/maps/yDMgF1KLySz",
+            "description": "Join Patreon creators and team members for a drink at Portland's best combination coffeehouse/motorcycle shop."
+          },
+          {
+            "start": "10am",
+            "end": "12:30pm",
+            "name": "#photography",
+            "location": "Leaving from XOXO Registration",
+            "location_url": "https://goo.gl/idwx2Z",
+            "description": "A photowalk along Portland's waterfront and eastside."
+          },
+          {
+            "start": "4pm",
+            "end": "6pm",
+            "name": "#podcasts",
+            "location": "Memorial Coliseum Pavilion",
+            "location_url": "https://goo.gl/maps/CqbbFK6T1vM2"
+          },
+          {
+            "start": "10am",
+            "end": "12pm",
+            "name": "#robots",
+            "location": "Automation Resources Group",
+            "location_url": "https://goo.gl/maps/ohuvBJmiSoF2"
+          },
+          {
+            "start": "1pm",
+            "end": "3pm",
+            "name": "#tabletop",
+            "location": "Lucky Labrador Hawthorne",
+            "location_url": "https://goo.gl/maps/b9xMr9mvnX62"
+          },
+          {
+            "start": "2pm",
+            "end": "3pm",
+            "name": "#tim-tam-slam-jam",
+            "location": "Memorial Coliseum Pavilion",
+            "location_url": "https://goo.gl/maps/CqbbFK6T1vM2"
+          },
+          {
+            "start": "11:30am",
+            "end": "1pm",
+            "name": "#vegetarian-vegan",
+            "location": "Sweetpea Baking Co.",
+            "location_url": "https://goo.gl/maps/nhnxbTySbgm"
+          },
+          {
+            "start": "12pm",
+            "end": "5pm",
+            "name": "#videogames",
+            "location": "Ground Kontrol",
+            "location_url": "https://goo.gl/maps/f4k8jowwQmr"
+          },
+          {
+            "start": "11am",
+            "end": "1pm",
+            "name": "#visual-art",
+            "location": "Outlet",
+            "location_url": "https://goo.gl/maps/pMmpuFjr2P32"
+          },
+          {
+            "start": "4:30pm",
+            "end": "6pm",
+            "name": "#wine",
+            "location": "Vino",
+            "location_url": "https://goo.gl/maps/kLBA9W38hNs"
+          },
+          {
+            "start": "3pm",
+            "end": "6pm",
+            "name": "#writing",
+            "location": "Sloan's Tavern",
+            "location_url": "https://goo.gl/maps/EL7HwZtTuKr"
+          },
+          {
+            "start": "12pm",
+            "end": "2pm",
+            "name": "#x-commons",
+            "location": "Memorial Coliseum Pavilion",
+            "location_url": "https://goo.gl/maps/CqbbFK6T1vM2"
+          },
+          {
+            "start": "1:30pm",
+            "end": "3:30pm",
+            "name": "#enby",
+            "location": "Overlook Park",
+            "location_url": "https://goo.gl/maps/s1cWC7vWQ452"
+          },
+          {
+            "start": "3pm",
+            "end": "6pm",
+            "name": "#x-videogames",
+            "location": "Guardian Games",
+            "location_url": "https://goo.gl/maps/XYDHgWxYSES2"
+          },
+          {
+            "start": "3pm",
+            "end": "5pm",
+            "name": "#poc",
+            "location": "Hungry Tiger",
+            "location_url": "https://goo.gl/maps/eVgxbfRw91t"
+          }
+        ]
+      },
+      {
+        "start": "11am",
+        "end":   "5pm",
+        "name": "Level Eater's XOXO Adventure",
+        "url": "https://www.tickettomato.com/event/5731",
+        "venue": "halfling",
+        "description": "Level Eater's XOXO Adventure is an epic, unofficial Dungeons & Dragons experience that turns individual heroics into a cooperative fantasy gaming quest and fundraiser for MyMusicRx. This special Friday afternoon event is exclusively for XOXO attendees, with special guest DMs Satine Phoenix, Keith Baker, and Patrick Rothfuss. No experience necessary to play! Tickets are [now available](https://www.tickettomato.com/event/5731)."
+      },
+      {
+        "start": "1pm",
+        "end":   "5pm",
+        "name": "XOXR Meetup",
+        "url": "https://events.mozilla.org/xoxr",
+        "venue": "mozilla",
+        "description": "Join our friends at Intel and Mozilla for an afternoon of XR, VR, and AR demos from creators across the XOXO community, the XR Studio, Intel, and Mozilla on a variety of headsets, followed by Beat Saber."
+      },
+      {
+        "start": "4pm",
+        "end":   "7pm",
+        "name": "Portland Creative Jam",
+        "url": "https://nvite.com/CreativeJam/xoxofest",
+        "venue": "northwarehouse",
+        "description": "Our friends at Adobe bring their two-part design experience back to PDX, combining design talks with a ten-person design tournament showdown. Learn more and RSVP [right here](https://nvite.com/CreativeJam/xoxofest). Free beer, wine, and food available."
+      }
+    ]
+  },
+  {
+    "name": "Early Registration",
+    "venue": "pavilion",
+    "days": {
+      "2018-09-06": {
+        "description": "We’re opening registration a little early this year. Pick up your badge, shirt, and other goodies at your leisure before the party.",
+        "start": "12pm",
+        "end": "7pm"
+      }
+    }
+  },
+  {
+    "name": "Site Open",
+    "venue": "pavilion",
+    "days": {
+      "2018-09-07": {
+        "description": "Grab your badges, a bite to eat from our carts, and drinks from Deadstock Coffee.",
+        "start": "9am"
+      },
+      "2018-09-08": {
+        "description": "Grab a bite to eat and drinks from Deadstock Coffee before the first day of XOXO talks.",
+        "start": "9am"
+      },
+      "2018-09-09": {
+        "description": "After the last three nights, you’re going to need some caffeine. Come on over.",
+        "start": "9am"
+      }
+    }
+  },
+  {
+    "name": "Welcome Address",
+    "venue": "mainstage",
+    "days": {
+      "2018-09-06": {
+        "description": "Welcome to XOXO! The Andys introduce you to XOXO—what it’s all about, what’s happening, and why we’re here.",
+        "start": "7pm"
+      }
+    }
+  },
+  {
+    "name": "Opening Keynote",
+    "venue": "mainstage",
+    "days": {
+      "2018-09-06": {
+        "description": "This year, we're kicking off XOXO with one of our favorite creators: standup comic, actor and writer, Cameron Esposito.",
+        "start": "8pm"
+      }
+    }
+  },
+  {
+    "name": "Opening Party",
+    "venue": "pavilion",
+    "days": {
+      "2018-09-06": {
+        "description": "After the keynote, join your fellow attendees under the stars for great food and a lineup of Oregon craft beer, wine, and non-alcoholic drinks.",
+        "start": "9pm",
+        "end": "12am"
+      }
+    }
+  },
+  {
+    "name": "Film & Animation",
+    "slug": "film-animation",
+    "venue": "mainstage",
+    "days": {
+      "2018-09-07": {
+        "description": "Screenings of new and upcoming film and animation projects with creator Q&As.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    },
+    "lineup": [
+      {
+        "start": "7pm",
+        "name": "Victoria Vincent",
+        "blurb": "Animator",
+        "url": "http://vewn.us/",
+        "description": "We stumbled on Los Angeles-based animator [Victoria Vincent](http://vewn.us/)’s work while randomly browsing related channels on YouTube, and were instantly floored by her animations, depicting the vulnerability of our digital selves. Don’t miss this up-and-coming talent."
+      },
+      {
+        "start": "7:30pm",
+        "name": "Graham Annable",
+        "blurb": "Grickle",
+        "url": "https://www.grickle.com/",
+        "description": "When he’s not storyboarding and directing Oscar-nominated films at Laika, cartoonist and animator [Graham Annable](https://www.grickle.com/) is the creator of *Grickle*, a darkly comic world of googly-eyed beings manifesting itself in [several books](http://www.powells.com/SearchResults?keyword=Graham+Annable), the [Puzzle Agent](https://telltale.com/series/puzzle-agent/) series of videogames, and the [Grickle Channel](https://www.youtube.com/user/grickle) on YouTube."
+      },
+      {
+        "start": "8pm",
+        "name": "Lisa Hanawalt",
+        "blurb": "Tuca & Bertie",
+        "url": "http://www.lisahanawalt.com/",
+        "description": "[BoJack Horseman](http://bojackhorseman.com/) production designer/producer [Lisa Hanawalt](http://www.lisahanawalt.com/) returns to XOXO to show off [Tuca & Bertie](https://www.avclub.com/tiffany-haddish-to-star-in-tuca-bertie-a-new-animate-1823171996), her upcoming animated series for Netflix, starring Tiffany Haddish and Ali Wong as two bird women sharing an apartment building and their lives."
+      },
+      {
+        "start": "8:30pm",
+        "name": "Demi Adejuyigbe",
+        "url": "http://www.demiadejuyig.be/",
+        "description": "[Demi Adejuyigbe](http://www.demiadejuyig.be/) is a writer for the Late Late Show by day, as well as a prolific musical parodist known for his fake [Will Smith](https://twitter.com/electrolemon/status/835652523868332032)/[Childish Gambino](https://twitter.com/electrolemon/status/960670825400614913) movie songs and musical comedy podcast [Punch Up The Jam](https://punchupthejam.com/). In a comedic exploration of music and parody, Demi walks us through his own satirical tutorial on how to understand, create, and embody jazz music."
+      },
+      {
+        "start": "9pm",
+        "name": "Lindsay Ellis",
+        "blurb": "Video Essayist",
+        "url": "https://www.youtube.com/chezapoctube",
+        "description": "With a Master’s degree in film criticism and the support of her dedicated Patreon base, [Lindsay Ellis](https://www.youtube.com/chezapoctube) creates thoughtful and in-depth video essays about film technique, feminist theory, and a whole lot of Transformers."
+      },
+      {
+        "start": "10pm",
+        "name": "Bill Wurtz",
+        "blurb": "Musician",
+        "url": "https://www.youtube.com/billwurtz",
+        "description": "You may know [Bill Wurtz](https://www.youtube.com/billwurtz) for his absurdly-popular whirlwind histories of Japan and the entire world, netting over 89 million views on YouTube. With 2.6 million followers, the multi-instrumentalist gained an obsessive cult following for his uniquely Wurtzian styles of music and animation."
+      },
+      {
+        "start": "10:30pm",
+        "name": "Mystery Movie",
+        "description": "Grab some popcorn, sit back, and enjoy the show."
+      }
+    ]
+  },
+  {
+    "name": "Art+Code",
+    "slug": "art-code",
+    "venue": "theater",
+    "days": {
+      "2018-09-07": {
+        "description": "New for 2018, an evening of our favorite creators working at the intersection of art and technology.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    },
+    "lineup": [
+      {
+        "start": "7pm",
+        "name": "Jenn Schiffer",
+        "blurb": "Glitch",
+        "url": "https://jennmoney.biz/",
+        "description": "After her brilliant talk at the last XOXO, we’re thrilled Jenn Schiffer agreed to return to XOXO to emcee our first Art+Code event. As Glitch’s community engineer, Jenn is a pioneer in making art with code, teaching code with art, and making open-source tools to play with both."
+      },
+      {
+        "start": "7:20pm",
+        "name": "Baratunde Thurston",
+        "blurb": "Futurist Comedian",
+        "url": "http://baratunde.com/",
+        "description": "Baratunde Thurston is an Emmy-nominated futurist comedian, writer, and cultural critic who helped re-launch The Daily Show with Trevor Noah, co-founded Cultivated Wit and the About Race podcast, and wrote the New York Times bestseller How To Be Black."
+      },
+      {
+        "start": "7:40pm",
+        "name": "Janelle Shane",
+        "blurb": "AI Weirdness",
+        "url": "http://aiweirdness.com/",
+        "description": "Research scientist Janelle Shane believes in letting neural networks be weird, training AI to write unintentional humor, generating everything from recipes and knitting patterns to uniquely ridiculous names for guinea pigs, crayon colors, and craft beers."
+      },
+      {
+        "start": "8pm",
+        "name": "Monica Dinculescu",
+        "blurb": "Emojineer",
+        "url": "https://meowni.ca/",
+        "description": "By day, Monica Dinculescu is an Emojineer at Google, where she works on Polymer, web components, and Chrome. At night, she makes side projects that do ridiculous and wonderful things with emoji, like generate emoji gardens, translate text to emoji, and make it rain emoji."
+      },
+      {
+        "start": "8:20pm",
+        "name": "Nicole He",
+        "blurb": "Programmer, Artist",
+        "url": "http://nicole.pizza/",
+        "description": "Brooklyn-based programmer and artist Nicole He is the genius behind projects like True Love Tinder Robot, The Best Art, and Soylent Dick, which is exactly what it sounds like. Her most recent work is Enhance.computer, a cyberpunk game played with your voice in the browser."
+      },
+      {
+        "start": "8:40pm",
+        "name": "Diana Smith",
+        "blurb": "Pure CSS Paintings",
+        "url": "http://diana-adrianne.com/purecss-francine/",
+        "description": "Using only a text editor, UI engineer Diana Smith creates elaborate art inspired by oil paintings with pure CSS. The results are a stunning and unique fusion of art and code, with remarkable results when viewed in older browsers."
+      },
+      {
+        "start": "9pm",
+        "name": "Hard G Project",
+        "url": "http://thehardgproject.com/",
+        "description": "A collective art project started by Roberto Baldwin and internet hero Darth, the Hard G Project showcased original animated GIFs on the streets of San Francisco from a variety of artists, and now brings those collected works to XOXO."
+      },
+      {
+        "start": "9:20pm",
+        "name": "Becca Ricks",
+        "blurb": "Technologist, Researcher",
+        "url": "https://beccaricks.space/",
+        "description": "Becca is a creative technologist, researcher, and activist engaged in issues of privacy and freedom of expression online, currently as a Ford-Mozilla Open Web Fellow at Human Rights Watch. While pursuing her master's from ITP, she researched and built interactive experiences that probe algorithmic and surveillance systems."
+      },
+      {
+        "start": "9:40pm",
+        "name": "Everest Pipkin",
+        "blurb": "Curator, Artist",
+        "url": "http://everest-pipkin.com/",
+        "description": "Achingly beautiful and hard to categorize, Everest Pipkin’s artwork often reflects the physical and natural world through digital space — generative moths and star fields, fragmented and fictional landscapes, exploring clouds on Street View. Their latest project is Ellinger, TX, a slice-of-life game in a small Texas town cut out from the networked world."
+      },
+      {
+        "start": "10pm",
+        "name": "Kate Compton",
+        "blurb": "Artist, Programmer",
+        "url": "http://www.galaxykate.com/",
+        "description": "Artist and inventor Kate Compton makes things to help people make things that make things — generative art and procedural content tools like Tracery, a super-simple tool to  generate text for bots, games, and more, and Bottery, an experimental new tool for building chatbots, voice interface games, or weird experimental experiences."
+      },
+      {
+        "start": "10:20pm",
+        "name": "Omayeli Arenyeka",
+        "blurb": "Artist, Technologist",
+        "url": "https://www.omayeli.com/",
+        "description": "Omayeli is an artist and technologist from Nigeria currently playing with data at the Recurse Center in NYC. Her most recent projects include Face the Music, a Glitch app that lets you make and record music with your facial expressions, and Art Connoisseur, a Twitter bot that interprets and comments on historical art."
+      },
+      {
+        "start": "10:40pm",
+        "name": "Botnik Studios",
+        "blurb": "Machine-Assisted Comedy",
+        "url": "http://botnik.org/studios.html",
+        "description": "Botnik Studios is an entertainment group developed to exhibit work created by the Botnik community, a group of writers, artists and developers collaborating with machines to create comedy, using predictive keyboards to generate new Scrubs monologues, Coachella lineups, Harry Potter pages, song lyrics, and more."
+      }
+    ]
+  },
+  {
+    "name": "Story",
+    "slug": "story",
+    "venue": "mainstage",
+    "days": {
+      "2018-09-08": {
+        "description": "An evening of storytelling and comedy from some of our favorite independent writers and podcasters.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    },
+    "lineup": [
+      {
+        "start": "7pm",
+        "name": "Friendshipping!",
+        "blurb": "Jenn & Trin",
+        "url": "https://friendshipping.simplecast.fm/",
+        "description": "It’s hard to make friends and harder to keep them. On their weekly podcast, Jenn Bane & Trin Garritano answer questions about friendship with empathy, some hard talk, and a lot of giggling. Special guest Molly Lewis joins them for a live rendition of the Friendshipping! theme song."
+      },
+      {
+        "start": "8pm",
+        "name": "Feminist Frequency Radio",
+        "blurb": "Anita Sarkeesian, Carolyn Petit & Ebony Aster",
+        "url": "https://feministfrequency.com/",
+        "description": "Since its 2009 launch, Feminist Frequency pioneered media criticism on the internet. On their podcast, co-hosts Anita Sarkeesian, Carolyn Petit, and Ebony Aster bring you dispatches from the pop culture wars and invite you to listen in on their entertaining, stimulating, take-no-prisoners conversations about the latest in film, games, and TV."
+      },
+      {
+        "start": "9pm",
+        "name": "Criminal / This Is Love",
+        "blurb": "Phoebe Judge & Lauren Spohrer",
+        "url": "https://thisiscriminal.com/",
+        "description": "Phoebe Judge and Lauren Spohrer join us at XOXO Story for a special hybrid show combining their award-winning true crime podcast Criminal, and their latest project, This Is Love, a podcast investigating life’s most persistent mystery."
+      },
+      {
+        "start": "10pm",
+        "name": "Jean and John",
+        "blurb": "Jean Grae & John Hodgman",
+        "description": "Jean and John are friends. John Hodgman is still on television sometimes. Jean Grae used to rap more often. Just google them. The internet will tell you they have done a lot of stuff and had a lot of adventures and are the funniest, most charming people in the world. This is their variety show."
+      }
+    ]
+  },
+  {
+    "name": "Comics",
+    "slug": "comics",
+    "venue": "theater",
+    "days": {
+      "2018-09-08": {
+        "description": "New for 2018, a night of our favorite comics creators sharing their work and the stories behind them.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    },
+    "lineup": [
+      {
+        "start": "7pm",
+        "name": "Webcomic Name",
+        "blurb": "Alex Norris",
+        "url": "http://webcomicname.com/",
+        "description": "London-based cartoonist Alex Norris joins us from London to talk about Webcomic Name, his hilarious blobby parody of “relatable content” comics that, in a twist of irony, evolved into something much more sincere… “oh no”"
+      },
+      {
+        "start": "7:30pm",
+        "name": "Goddess Mode",
+        "blurb": "Zoë Quinn",
+        "url": "https://www.theverge.com/2018/6/7/17438910/dc-vertigo-comics-relaunch-zoe-quinn-goddess-mode",
+        "description": "Crash Override founder Zoë Quinn returns to XOXO to talk about Goddess Mode, their upcoming “magical girl cyberpunk comic” series leading DC Comics’ relaunch of Vertigo, due out in December. Interviewed by The Verge's culture editor [Laura Hudson](https://laurahudson.me/)."
+      },
+      {
+        "start": "8pm",
+        "name": "Meal",
+        "blurb": "Blue Delliquanti & Soleil Ho",
+        "url": "http://mealcomic.com/",
+        "description": "Blue Delliquanti, the award-winning cartoonist behind O Human Star, teamed up with Racist Sandwich co-creator Soleil Ho to write Meal, an upcoming graphic novel published by Iron Circus Comics about a young chef navigating love and friendship in a new city while pursuing a job at a restaurant that specializes in insect cuisine."
+      },
+      {
+        "start": "8:30pm",
+        "name": "Shen Comix/Bluechair",
+        "blurb": "Shen",
+        "url": "http://shencomix.com/",
+        "description": "Shenanigansen—or Shen, for short—is the prolific artist behind the enormously popular Shen Comix and Bluechair comics, building a devoted fan base with a distinctive art style and a relatable focus on self-doubt, mental health, overwork, and social anxiety."
+      },
+      {
+        "start": "9pm",
+        "name": "ELEMENTS",
+        "blurb": "Taneka Stotts",
+        "url": "http://tanekastotts.com/elements-anthology",
+        "description": "Fresh off her Eisner win for Best Anthology, comics writer/publisher/editor Taneka Stotts joins us from Los Angeles to talk about ELEMENTS, her ongoing Kickstarter-funded anthology series themed after the four elements, showcasing incredible creators of color in the comics community."
+      },
+      {
+        "start": "9:30pm",
+        "name": "The Nib",
+        "blurb": "Matt Bors & Eleri Harris",
+        "url": "https://thenib.com/",
+        "description": "Launched in 2013, The Nib is dedicated to publishing political commentary, journalism, essays, and memoirs in comic form online. Along the way, they’ve printed an anthology, made an animated series, and kickstarted a new magazine, raising over $168k in July. Editors Matt Bors and Eleri Harris join us to talk about the site’s history."
+      },
+      {
+        "start": "10pm",
+        "name": "How To Invent Everything",
+        "blurb": "Ryan North & Lucy Bellwood",
+        "url": "http://www.howtoinventeverything.com/",
+        "description": "A survival guide for the stranded time traveler, How to Invent Everything is the upcoming book by bestselling author Ryan North, the writer responsible for Dinosaur Comics, the Eisner and Harvey award-winning Adventure Time comics, and the Unbeatable Squirrel Girl series. Illustrated by adventure cartoonist/XOXO alum Lucy Bellwood, who joins Ryan for a chat about the making of the book."
+      }
+    ]
+  },
+  {
+    "name": "Arcade",
+    "slug": "arcade",
+    "venue": "arcade",
+    "description": "Play the best upcoming indie videogames with their creators in our popup arcade, now expanded to two nights.",
+    "days": {
+      "2018-09-07": {
+        "description": "Play the best upcoming indie videogames with their creators in our popup arcade, now expanded to two nights.",
+        "start": "7pm",
+        "end": "12am"
+      },
+      "2018-09-08": {
+        "description": "Play the best upcoming indie videogames with their creators in our popup arcade, now expanded to two nights.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    },
+    "lineup": [
+      {
+        "name": "Mineko's Night Market",
+        "blurb": "Meowza Games",
+        "url": "http://minekosnightmarket.com/",
+        "description": "Mineko’s Night Market is a game about “crafting crafts, eating eats, and catting cats.” Set on a mysterious Japanese island overrun by cats, a young girl named Mineko must discover the secrets of the town while crafting items for the weekly night markets. A celebration of Japanese culture, creators Brent and Brandi Kobayashi join us from Vancouver to show it off."
+      },
+      {
+        "name": "Ooblets",
+        "blurb": "Glumberland",
+        "url": "https://ooblets.com/",
+        "description": "The debut from designers Rebecca Cordingley and Ben Wasser, Ooblets is an upcoming farming, creature collection, and town life indie game inspired by Pokémon, Harvest Moon, and Animal Crossing. Manage your farm, grow and train your ooblets, explore strange lands, and dance-battle wild ooblets and other ooblet trainers."
+      },
+      {
+        "name": "Nour",
+        "blurb": "Tj Hughes",
+        "url": "http://terrifyingjellyfish.com/",
+        "description": "Created by St. Louis designer Tj Hughes, Nour is an experimental game with no goals or objectives. It just wants you to play with your food — button-mashing to interact with deliciously-rendered scenes of ramen noodles, boba tea, popcorn and more in unexpected ways. And without the mess!"
+      },
+      {
+        "name": "Neo Cab",
+        "blurb": "Chance Agency",
+        "url": "https://neocabgame.com/",
+        "description": "Neo Cab is an emotional survival game about staying human in a world disrupted by automation. You play as Lina, the last human driver on the neon-drenched streets of Los Ojos, struggling to make ends meet while saving a missing friend. Most of Chance Agency, including creative lead Patrick Ewing and producer Felix Kramer, join us from San Francisco."
+      },
+      {
+        "name": "Busy Work",
+        "blurb": "Mouse & the Billionaire",
+        "url": "http://www.mouseandthebillionaire.com/busyWork/",
+        "description": "Like Spaceteam in an office, Busy Work is a fast-paced multiplayer installation game that makes frantic and hilarious gameplay out of tedious office work. Grab a cubicle and compete with your colleagues to answer as many customer emails as you can. Creators Matt and Lisa Bethancourt are driving from Boulder to bring their unique game to XOXO."
+      },
+      {
+        "name": "Pedal Pushers",
+        "blurb": "Amy Wibowo",
+        "url": "https://pedalpushers.io/",
+        "description": "BubbleSort Zines creator Amy Wibowo (aka Sailor Mercury) was inspired by a real-life trip to create Pedal Pushers, a game about biking across Finland with your cousin. Pedal with your fingers, chat with your cousin, and set up camp in the forest every night, with a charming soundtrack by Louie Zong and Steven Universe music composer Aivi Tran."
+      },
+      {
+        "name": "Cathode Mk1",
+        "blurb": "Public Games",
+        "url": "http://www.publicgames.ca/",
+        "description": "A fictional long-lost console from the 1980s, the Cathode Mark 1 is the thesis project of Toronto artist Ryan Mason, constructed from multiple CRT televisions strung together. Each multi-channel game was specially designed for the retro-futuristic display, some making their debut at XOXO."
+      },
+      {
+        "name": "Untitled Goose Game",
+        "blurb": "House House",
+        "url": "https://househou.se/goose/",
+        "description": "“It's a lovely weekday morning in the village and you are a horrible goose.” It’s impossible not to love Untitled Goose Game, the hotly-anticipated new game from the creators of Push Me Pull You, where you play a mischievous goose making trouble. The team from House House joins us from Melbourne, Australia."
+      },
+      {
+        "name": "Kids",
+        "blurb": "Playables",
+        "url": "https://playkids.ch/",
+        "description": "The Nuovo Award-nominated KIDS is an experimental project about the psychology of groups, the second collaboration from Zurich-based director and animator Michael Frei and game designer Mario von Rickenbach after their award-winning animated short film and game, Plug & Play."
+      },
+      {
+        "name": "Knights and Bikes",
+        "blurb": "Foam Sword",
+        "url": "http://foamswordgames.com/knights",
+        "description": "Set on a fictional British island in the late 1980s, Knights and Bikes is a hand-painted action-adventure game about Nessa & Demelza, two tough imaginative girls, exploring the island in a Goonies-inspired tale. The debut game from Foam Sword Games, designers Rex Crowle and Moo Yu join us from London."
+      },
+      {
+        "name": "Hair Nah",
+        "blurb": "Momo Pixel",
+        "url": "http://hairnah.com/",
+        "description": "After growing tired of people touching her hair without permission, Portland art director Momo Pixel made Hair Nah, putting you in the shoes of a black woman trying to travel while swatting away grabby white hands. The game went viral, featured on CNN, Newsweek, Teen Vogue, Vice, and countless others."
+      },
+      {
+        "name": "Pikuniku",
+        "blurb": "Sectordub",
+        "url": "https://pikuniku.net/",
+        "description": "A delightful dystopian adventure game about making people happy, Pikuniku is set in a strange but playful world where everything is not as perfect as it seems. Creators Arnaud De Bock and Rémi Forcadell join us from London and Paris, respectively, to present their upcoming game."
+      },
+      {
+        "name": "Wobbledogs",
+        "blurb": "Tom Astle",
+        "url": "http://wobbledogs.com/",
+        "description": "Tom Astle is making Wobbledogs in public, a game about raising goofy physics-driven dogs, continually sharing the development of his fully physics-driven dogs on Twitter and to his backers on Patreon as they grow, mutate, and interact in unexpected ways with the virtual world around them."
+      },
+      {
+        "name": "Tuned Out!",
+        "url": "http://www.tunedout.tv/",
+        "description": "Started as an NYU thesis project, Tuned Out is a collection of 15 multiplayer arcade minigames that can be switched between instantly like the channels of a TV, challenging players to juggle all games at the same time to achieve the highest possible score. Switch channels to escape death, mess with your competition, or just because you feel like it. Presented by creators Denver Coulson, Missy Senteio, and Ben Sironko."
+      },
+      {
+        "name": "PIGSquad Showcase",
+        "blurb": "Various Artists",
+        "url": "https://pigsquad.com/",
+        "description": "The Portland Indie Game Squad is a nonprofit dedicated to supporting the local indie game community with events and resources. They’ve curated an incredible showcase of some of the best games the Pacific Northwest has to offer, and the designers of each will be on site to talk about their work. Featured games include [Dicey Dungeons](http://diceydungeons.com/), [The World Next Door](https://theworldnextdoor.com/), [Plunge](https://www.plungegame.com/), [That Blooming Feeling](https://totsteam.itch.io/thatbloomingfeeling), [Glowing Door](https://twitter.com/glowingdoorgame), [DJ Clips' Ultimate Pipe Dream](https://www.youtube.com/watch?v=1LeHFHa_JP0), [#Breakforcist Battle](http://www.lucidsheepgames.com/breakforcistbattle), [Cat Burglar](http://www.catburglargame.com/), [Robot Island](https://newbeings.itch.io/robot-island-prologue), [So-Gnar](https://mboffin.itch.io/so-gnar), [Planet Pain](https://itch.io/jam/ssjminigames/rate/274441), [Duster](https://coldrice.itch.io/duster), [Death Sword](https://www.gofundme.com/help-fund-deathsword-a-haunted-crpg), [Tetrash](https://twitter.com/NextLevelBanana/status/1016694985435983873), [Rocket Dad](https://globalgamejam.org/2018/games/rocket-dad-0), and [Ship It](http://thinkonlabs.com/)."
+      }
+    ]
+  },
+  {
+    "name": "Tabletop",
+    "slug": "tabletop",
+    "venue": "tabletop",
+    "description": "Expanded to two nights this year, play some of the best of the indie card, board, and RPG game scene with their designers.",
+    "days": {
+      "2018-09-07": {
+        "description": "Expanded to two nights this year, play some of the best of the indie card, board, and RPG game scene with their designers.",
+        "start": "7pm",
+        "end": "12am"
+      },
+      "2018-09-08": {
+        "description": "Expanded to two nights this year, play some of the best of the indie card, board, and RPG game scene with their designers.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    },
+    "lineup": [
+      {
+        "name": "Star Crossed",
+        "blurb": "Bully Pulpit Games",
+        "url": "http://bullypulpitgames.com/games/star-crossed/",
+        "description": "Star Crossed is a two-player game of forbidden love, with players crafting characters who are powerfully attracted to each other, but have a compelling reason not to act on their feelings. As their attraction grows, players draw bricks from an increasingly shaky tower. If the tower falls, your characters act on their feelings, and the number of bricks determines their fate. Presented by writer and designer Alex Roberts."
+      },      
+      {
+        "name": "Bluebeard's Bride",
+        "blurb": "Magpie Games",
+        "url": "http://www.magpiegames.com/bluebeards-bride/",
+        "description": "Bluebeard’s Bride is an investigatory horror tabletop roleplaying game, written and designed by Whitney “Strix” Beltrán, Marissa Kelly, and Sarah Richardson. Based on the Bluebeard fairy tale, you and your friends explore Bluebeard’s home as the Bride, creating your own beautifully tragic version of the dark fairy tale."
+      },
+      {
+        "name": "Dialect",
+        "blurb": "Thorny Games",
+        "url": "http://www.thornygames.com/dialect-rpg",
+        "description": "Dialect is a tabletop roleplaying game about an isolated community, their language, and what it means for that language to be lost. Players tell the story of the Isolation by building their language. New words will come from the fundamental aspects of the community: who they are, what they believe in, and how they respond to a changing world. Presented by Thorny Games founders Kathryn Hymes and Hakan Seyalioglu."
+      },
+      {
+        "name": "Ravine",
+        "blurb": "Stellar Factory",
+        "url": "https://www.playravine.com/",
+        "description": "Ravine is a strategic and cooperative survival card game, from the team that made the Spaceteam card game, raising over $300k on Kickstarter from 6,600 backers. You and your friends survived the plane crash, but will you survive the night? Work together to forage for food, craft a fire, and build shelters, but be wary: every step you take in the ravine could be your last."
+      },
+      {
+        "name": "BFF!",
+        "blurb": "Heart of the Deernicorn",
+        "url": "https://heartofthedeernicorn.com/games/bff/",
+        "description": "Inspired by the award-winning RPG, Fall of Magic, BFF! is a roleplaying game for 2-6 players of all ages by mother and son design duo, Ross Cowman and Terri Cohlene, telling the story of a group of young friends hanging out, having adventures, and exploring how our friendships change and grow."
+      },
+      {
+        "name": "Someone Has Died",
+        "blurb": "Gather Round Games",
+        "url": "https://www.someonehasdiedgame.com/",
+        "description": "Someone Has Died is an improvisational storytelling game where players assume the roles of a bunch of weirdos at a will arbitration, trying to inherit a cut of the deceased’s fortune. Using all the cards in your hand, craft a character and convince the estate keeper that you’re the most deserving of them all."
+      },
+      {
+        "name": "Quest",
+        "blurb": "The Adventure Guild",
+        "url": "https://www.adventure.game/",
+        "description": "Quest is a game about becoming an extraordinary person in a dangerous world. Designed specifically to make roleplaying games accessible to a wider audience, Quest takes a new approach to telling an amazing story with your friends. Designer T.C. Sottek joins us to show off his latest prototype."
+      },
+      {
+        "name": "You Think You Know Me",
+        "blurb": "Ami Baio",
+        "url": "https://youthinkyouknowme.cards/",
+        "description": "Inspired by the information we all share online, Portland-based designer Ami Baio created You Think You Know Me, a conversational card game of 500 unique cards that playfully tests how well you know your friends, family, partners, or coworkers — helping you learn more about what they love and who they are."
+      },
+      {
+        "name": "Edible Games Cookbook",
+        "blurb": "Jenn Sandercock",
+        "url": "https://ediblegames.com/",
+        "description": "Game designer Jenn Sandercock returns to XOXO to share a new game from her Edible Games Cookbook, fresh off her successful Kickstarter project raising over $100,000 from 1,600 backers to print her collection of unique and tasty edible games."
+      },
+      {
+        "name": "Two Rooms and a Boom Expansions",
+        "blurb": "Tuesday Knight Games",
+        "url": "http://www.tuesdayknightgames.com/tworoomsandaboom/",
+        "description": "Every year, Two Rooms and a Boom is one of the most popular games at XOXO, a social game of hidden roles and deduction played in large groups of up to 60 players. We asked creators Sean McCoy and Alan Gerding to join us once again to share their upcoming expansions and rarely-seen prototypes."
+      },
+      {
+        "name": "Dream City / Rise Up",
+        "blurb": "Molly McLeod",
+        "url": "http://www.mollymcleod.com/games/",
+        "description": "Molly McLeod designs civic games, including Rise Up, an ethically manufactured, cooperative board game about people power and taking on oppressive systems to create change, and her latest, Dream City, a card game for 4-8 people to collaborate to build their ideal city and tell the story of what it’s like to live there, coming to Kickstarter later this year."
+      }
+    ]
+  },
+  {
+    "name": "Conference",
+    "slug": "conference",
+    "venue": "mainstage",
+    "description": "Two days of stories from artists and creators using the internet to maintain their independence, and use their platforms in important ways.",
+    "days": {
+      "2018-09-08": {
+        "description": "Our first full day of talks, featuring Jonny Sun, Jean Grae, Jennifer 8. Lee, Reductress creators Beth Newell & Sarah Pappalardo, Open Mike Eagle, Matt Furie, and ContraPoints’ Natalie Wynn.",
+        "start": "10am",
+        "end": "5pm"
+      },
+      "2018-09-09": {
+        "description": "On day two, hear stories from Demi Adejuyigbe, Claire L. Evans, Adam Conover, Helen Rosner, MariNaomi, Ijeoma Oluo, and Hari Kondabolu.",
+        "start": "10am",
+        "end": "5pm"
+      }
+    },
+    "lineup": {
+      "2018-09-08": [
+        {
+          "start": "10:30am",
+          "name": "Opening Comments"
+        },
+        {
+          "start": "10:45am",
+          "name": "Jonny Sun",
+          "blurb": "Writer/Illustrator/Aliebn",
+          "url": "https://www.jomnysun.com/",
+          "description": "Jonny Sun is the author and illustrator of everyone's a aliebn when ur a aliebn too, the illustrated story of a lonely alien sent to observe Earth, inspired by his popular Twitter account. Jonny is currently a doctoral candidate at MIT and recently announced he’s illustrating Gmorning, Gnight, a collection of daily pep talks by Lin-Manuel Miranda."
+        },
+        {
+          "start": "11:05am",
+          "name": "Jean Grae",
+          "blurb": "Rapper / Writer / Director",
+          "url": "https://www.instagram.com/jeanniegrigio/",
+          "description": "A true polymath, Jean Grae is a legendary indie rapper, singer, writer, comedian, and actor. Her latest album is Everything’s Fine, a collaboration with partner Quelle Chris, with wide-ranging cameos from Hannibal Buress, Nick Offerman, Michael Che, and John Hodgman, who joins Jean at XOXO Story for their live variety show on Saturday night."
+        },
+        {
+          "start": "11:25am",
+          "name": "Jennifer 8. Lee",
+          "blurb": "EmojiNation",
+          "url": "http://www.jennifer8lee.com/",
+          "description": "Jennifer 8. Lee is the founder of Emojination, a grassroots group aiming to make emoji more inclusive and representative. A New York Times-bestselling author and film producer, Jenny is co-founder and CEO of Plympton, a San Francisco-based literary studio that innovates in digital publishing."
+        },
+        {
+          "start": "11:45am",
+          "name": "Lunch"
+        },
+        {
+          "start": "2:30pm",
+          "name": "Beth Newell & Sarah Pappalardo",
+          "blurb": "Reductress",
+          "url": "http://reductress.com/",
+          "description": "Beth Newell and Sarah Pappalardo are the creators of Reductress, the first and only satirical women’s magazine, brilliantly skewering condescending and outdated popular tropes in women’s media with cutting humor, including a newly-greenlit show for Comedy Central."
+        },
+        {
+          "start": "2:50pm",
+          "name": "Open Mike Eagle",
+          "blurb": "Rapper / Podcaster",
+          "url": "http://mikeeagle.net/",
+          "description": "After his stunning live performance in 2015, we’re thrilled Open Mike Eagle is returning to the XOXO stage. Released in late 2017, his album Brick Body Kids Still Daydream kicked off a worldwide tour and Tiny Desk Concert. His latest project is The New Negroes, an upcoming comedy and musical series for Comedy Central."
+        },
+        {
+          "start": "3:10pm",
+          "name": "Break"
+        },
+        {
+          "start": "4pm",
+          "name": "Matt Furie",
+          "blurb": "Artist/Illustrator",
+          "url": "http://mattfurie.com/",
+          "description": "Matt Furie is the illustrator and cartoonist best known as the creator of Pepe the Frog, a joyful character he was horrified to see co-opted by white nationalists and the alt-right as a mascot during the 2016 election. He’s fought to reclaim Pepe since, including a high-profile lawsuit to stop Infowars from profiting off his creation."
+        },
+        {
+          "start": "4:25pm",
+          "name": "Natalie Wynn",
+          "blurb": "ContraPoints",
+          "url": "https://www.youtube.com/ContraPoints",
+          "description": "With reason, dark humor, and fabulous costumes, ex-academic turned video essayist Natalie Wynn makes ContraPoints, her YouTube channel tackling social justice issues with an eye towards reaching wider audiences than progressives alone, last month surpassing 4,000 supporters on Patreon and over 8 million views on YouTube."
+        },
+        {
+          "start": "4:45pm",
+          "name": "Closing Comments"
+        }
+      ],
+      "2018-09-09": [
+        {
+          "start": "10:30AM",
+          "name": "Opening Comments"
+        },
+        {
+          "start": "10:45am",
+          "name": "Demi Adejuyigbe",
+          "blurb": "Screenwriter, Comedian, Podcaster",
+          "url": "http://www.demiadejuyig.be/",
+          "description": "By day, Demi Adejuyigbe is a comedy writer, currently for the Late Late Show. By night, he’s a relentlessly creative and prolific creator of great internet, from his absurdist parodies of Childish Gambino and Will Smith to his co-hosting duties on the Punch Up the Jam and Gilmore Guys podcasts."
+        },
+        {
+          "start": "11:05am",
+          "name": "Claire L. Evans",
+          "blurb": "Broad Band, YACHT",
+          "url": "https://clairelevans.com/",
+          "description": "Claire L. Evans performed at XOXO in 2014 as half of electropop duo YACHT, and returns to the XOXO stage as the author of Broad Band, her book telling the untold stories of visionary women in technology who helped create the internet as we know it."
+        },
+        {
+          "start": "11:25am",
+          "name": "Adam Conover",
+          "blurb": "Adam Ruins Everything",
+          "url": "http://www.adamconover.net/",
+          "description": "Adam Conover is the creator and host of Adam Ruins Everything on truTV, an investigative comedian combating widespread myths and misconceptions with humor, pulling in supporting experts to debunk everything from circumcision to the prison system."
+        },
+        {
+          "start": "11:45am",
+          "name": "Lunch"
+        },
+        {
+          "start": "2:30pm",
+          "name": "Helen Rosner",
+          "blurb": "Writer, Editor",
+          "url": "https://www.helenlikesyou.com/",
+          "description": "Helen Rosner is a writer and editor primarily focused on the culture of food, currently as the New Yorker’s food correspondent, and previously at Eater where she founded the longform and features department. This year, she was nominated for a James Beard Award for her loving ode to the Olive Garden."
+        },
+        {
+          "start": "2:50pm",
+          "name": "MariNaomi",
+          "blurb": "Author, Illustrator",
+          "url": "https://marinaomi.com/",
+          "description": "Award-winning cartoonist MariNaomi created the Cartoonists of Color Database and Queer Cartoonists Database to spotlight marginalized comics creators, a labor of love that’s changing the landscape of comics."
+        },
+        {
+          "start": "3:10pm",
+          "name": "Break"
+        },
+        {
+          "start": "4pm",
+          "name": "Ijeoma Oluo",
+          "blurb": "Writer, Editor",
+          "url": "http://www.ijeomaoluo.com/",
+          "description": "Ijeoma Oluo is editor at large of The Establishment, and the author of So You Want to Talk About Race, her powerful new book that shifts the burden of explaining difficult conversations around systemic inequality from people of color onto white audiences."
+        },
+        {
+          "start": "4:25pm",
+          "name": "Hari Kondabolu",
+          "blurb": "Comedian, Writer, Podcaster",
+          "url": "http://www.harikondabolu.com/",
+          "description": "Hari Kondabolu is an enormously talented standup comic and podcast host whose documentary, The Trouble with Apu, made headlines and raised awareness of how the the popular Simpsons character impacted South Asian-Americans like him for decades."
+        },
+        {
+          "start": "4:45pm",
+          "name": "Closing Comments"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Closing Party",
+    "venue": "pavilion",
+    "days": {
+      "2018-09-09": {
+        "description": "You probably shouldn’t miss this.",
+        "start": "7pm",
+        "end": "12am"
+      }
+    }
+  },
+  {
+    "name": "Surprise Performance",
+    "venue": "mainstage",
+    "days": {
+      "2018-09-09": {
+        "description": "We’d tell you if we could, but we can’t. You’ll just have to show up, won’t you?",
+        "start": "8pm"
+      }
+    }
+  }
+]

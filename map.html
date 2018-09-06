@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>what's next xoxo</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='events.json'></script>
+<script src='venues.json'></script>
+<script src='moment.min.js'></script>
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<style>
+  @font-face {
+    font-family: Syne;
+    src: url("Syne-Regular-e876d29f.eot?#iefix")
+    format("embedded-opentype"), url("Syne-Regular-e26f38d7.woff2")
+    format("woff2"), url("Syne-Regular-0b36d656.woff")
+    format("woff");
+    font-style: normal;
+    font-weight: 400;
+  }
+	body {
+    font-family: Syne, -apple-system, BlinkMacSystemFont, 
+			"Segoe UI", "Roboto", "Oxygen", 
+			"Ubuntu", "Cantarell", "Fira Sans", 
+			"Droid Sans", "Helvetica Neue", sans-serif;
+	}
+  body { margin: 0; padding: 0; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; z-index: 1; }
+  #overlay {
+    margin: 0;
+    background-color:rgba(240, 18, 190, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+  .title {
+    font-size: 10vmin;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1vh;
+  }
+  .boxes {
+		width: 100%;
+    text-align: right;
+    color: #fff;
+    font-size: 8vmin; 
+  }
+  .event-title {
+    font-size: 8vmin; 
+  }
+  .event-desc {
+    font-size: 6vmin; 
+  }
+  .event-link, .event-link:visited {
+    color: #fff;
+  }
+  #clock {
+    font-size: 8vmin;
+  }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+<div id="overlay">
+  <div id="title" class="title">
+    WHAT'S NEXT XOXO
+  </div>
+  <div id="clock" class="boxes">
+		<div>
+			<span class="days"></span> Days
+		</div>
+		<div>
+			<span class="hours"></span> Hours
+		</div>
+		<div>
+			<span class="minutes"></span> Minutes
+		</div>
+		<div>
+			<span class="seconds"></span> Seconds
+		</div>
+	</div>
+  <div id="event" class="boxes">
+		<div>
+			<a class="event-link" href=""><span class="event-title"></span></a>
+		</div>
+		<div>
+			<span class="event-desc"></span>
+		</div>
+  </div>
+  <div id="upcoming">
+  </div>
+</div>
+
+<script>
+
+let state = {
+  events: null,
+  map: null
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Render map
+  state.map = renderMap();
+
+  // Show event content
+  renderEvents();
+
+  // Update event content periodically
+  setInterval(renderEvents, 30000);
+});
+
+function renderEvents() {
+  // Get events, ordered by date, with actual date values
+  state.events = processEvents(rawEvents);
+  console.log(state.events);
+
+  // Get next event
+  let nextEvent = state.events[0];
+
+  // Show countdown and next event details
+  renderClock(nextEvent.date);
+  let node = document.querySelector('#event');
+  renderEvent(nextEvent, node);
+
+  // TODO: Render currently happening events
+
+  // Render upcoming events
+
+  // Center map on event venue location
+  L.marker([nextEvent.venue.location.latitude, nextEvent.venue.location.longitude])
+    .addTo(state.map);
+  state.map.setView(new L.LatLng(nextEvent.venue.location.latitude, nextEvent.venue.location.longitude), 14);
+}
+
+function processEvents(events) {
+  let byTimes = events.reduce((out, event) => {
+    let lastDay = null;
+    if (event.lineup) {
+      if (Array.isArray(event.lineup)) {
+        event.lineup.forEach(act => {
+          let tmpEvent = Object.assign({}, act);
+          tmpEvent.venue = venues[event.venue];
+          tmpEvent.venue.shortName = event.venue;
+          tmpEvent.date = moment(lastDay + ' ' + act.start, 'YYYY-MM-DD hA'),
+          out.push(tmpEvent);
+        });
+      }
+      else {
+        Object.keys(event.lineup).forEach(day => {
+          event.lineup[day].forEach(act => {
+            let tmpEvent = Object.assign({}, act);
+            tmpEvent.date = moment(day + ' ' + act.start, 'YYYY-MM-DD hA'),
+            tmpEvent.venue = venues[event.venue];
+            tmpEvent.venue.shortName = event.venue;
+            out.push(tmpEvent);
+          });
+        });
+      }
+    }
+    else {
+      Object.keys(event.days).forEach(day => {
+        let tmpEvent = Object.assign({}, event.days[day]);
+        tmpEvent.date = moment(day + ' ' + event.days[day].start, 'YYYY-MM-DD hA'); //.subtract(1, 'day'),
+        tmpEvent.name = event.name;
+        tmpEvent.venue = venues[event.venue];
+        tmpEvent.venue.shortName = event.venue;
+        out.push(tmpEvent);
+        lastDay = day;
+      });
+    }
+    return out;
+  }, [])
+    .filter(ev => moment(new Date()).isBefore(ev.date))
+    .sort((a, b) => a.date - b.date);
+  return byTimes;
+}
+
+function renderEvent(event, node) {
+  console.log('renderEvent', event);
+  // TODO: link title to page
+  let title = node.querySelector('.event-title'); 
+  title.textContent = event.name;
+  let a = node.querySelector('a');
+  a.setAttribute('href', event.url);
+  let desc = node.querySelector('.event-desc'); 
+  desc.textContent = event.description;
+}
+
+function renderMap() {
+  L.mapbox.accessToken = 'pk.eyJ1IjoiYXV0b25vbWUiLCJhIjoiY2psb2NkMDhjMXMwZDNsbjNwa3dudjJlZiJ9.8puPK9QYP5JCEXST-7iOHQ';
+
+  // Replace 'mapbox.streets' with your map id.
+  var mapboxTiles = L.tileLayer('https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=' + L.mapbox.accessToken, {
+    attribution: '© <a href="https://www.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  });
+
+  var map = L.map('map')
+      .addLayer(mapboxTiles)
+      .setView([45.5532141,-122.6693299], 14);
+  return map;
+}
+
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function renderClock(endtime) {
+  var clock = document.querySelector('#clock');
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.textContent = t.days;
+    hoursSpan.textContent = ('0' + t.hours).slice(-2);
+    minutesSpan.textContent = ('0' + t.minutes).slice(-2);
+    secondsSpan.textContent = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+</script>
+
+</body>
+</html>
