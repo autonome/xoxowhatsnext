@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
+<meta charset="utf-8" />
 <title>what's next xoxo</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='events.json'></script>
@@ -12,9 +12,9 @@
 <style>
   @font-face {
     font-family: Syne;
-    src: url("Syne-Regular-e876d29f.eot?#iefix")
-    format("embedded-opentype"), url("Syne-Regular-e26f38d7.woff2")
-    format("woff2"), url("Syne-Regular-0b36d656.woff")
+    src: url("https://cdn.glitch.com/1ee61606-6c7e-4f12-96c8-8d288186bcf9%2FSyne-Regular-e876d29f.eot#iefix?1536259328729")
+    format("embedded-opentype"), url("https://cdn.glitch.com/1ee61606-6c7e-4f12-96c8-8d288186bcf9%2FSyne-Regular-e26f38d7.woff2?1536259328469")
+    format("woff2"), url("https://cdn.glitch.com/1ee61606-6c7e-4f12-96c8-8d288186bcf9%2FSyne-Regular-0b36d656.woff?1536259328576")
     format("woff");
     font-style: normal;
     font-weight: 400;
@@ -47,16 +47,16 @@
     margin-bottom: 1vh;
   }
   .boxes {
-		width: 100%;
+    width: 100%;
     text-align: right;
     color: #fff;
-    font-size: 8vmin; 
+    font-size: 8vmin;
   }
   .event-title {
-    font-size: 8vmin; 
+    font-size: 8vmin;
   }
   .event-desc {
-    font-size: 6vmin; 
+    font-size: 6vmin;
   }
   .event-link, .event-link:visited {
     color: #fff;
@@ -188,8 +188,10 @@ function renderEvent(event, node) {
   // TODO: link title to page
   let title = node.querySelector('.event-title'); 
   title.textContent = event.name;
-  let a = node.querySelector('a');
-  a.setAttribute('href', event.url);
+  if (event.url) {
+    let a = node.querySelector('a');
+    a.setAttribute('href', event.url);
+  }
   let desc = node.querySelector('.event-desc'); 
   desc.textContent = event.description;
 }
