@@ -143,14 +143,14 @@ function renderEvents() {
 
 function processEvents(events) {
   let byTimes = events.reduce((out, event) => {
-    let lastDay = null;
     if (event.lineup) {
       if (Array.isArray(event.lineup)) {
+        let day = Object.keys(event.days)[0];
         event.lineup.forEach(act => {
           let tmpEvent = Object.assign({}, act);
           tmpEvent.venue = venues[event.venue];
           tmpEvent.venue.shortName = event.venue;
-          tmpEvent.date = moment(lastDay + ' ' + act.start, 'YYYY-MM-DD hA'),
+          tmpEvent.date = moment(day + ' ' + act.start, 'YYYY-MM-DD hA'),
           out.push(tmpEvent);
         });
       }
@@ -174,7 +174,6 @@ function processEvents(events) {
         tmpEvent.venue = venues[event.venue];
         tmpEvent.venue.shortName = event.venue;
         out.push(tmpEvent);
-        lastDay = day;
       });
     }
     return out;
